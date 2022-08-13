@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 新 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container bg-light text-dark">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 p-5 my-5 border bg-secondary text-white">
+                <!--面板-->
+                <div class="panel panel-primary">
+                    <!--panel-heading-->
+                    <div class="panel-heading">
+                        <!--panel-title-->
+                        <h3 class="panel-title">论文提交
+                            <!--用到了pull-right-->
+                            <span class="glyphicon glyphicon-pushpin pull-right" aria-hidden="true"></span>
+                        </h3>
+                    </div>
+                    <!--panel-body-->
+                    <div class="panel-body">
+                        <!--把其他的组件放到panel-body里面-->
+                        <form class="form-horizontal form-label" method="get" action="#">
+                            <div class="form-group">
+                                <!--注意，这里为了让label中的内容与input的内容在一行，将label放在外面了-->
+                                <label for="num" class="col-sm-2 control-label">学号</label>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="username" placeholder="学号">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--注意，这里为了让label中的内容与input的内容在一行，将label放在外面了-->
+                                <label for="stu_name" class="col-sm-2 control-label">姓名</label>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="phone" placeholder="姓名">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--注意，这里为了让label中的内容与input的内容在一行，将label放在外面了-->
+                                <label for="major" class="col-sm-2 control-label">专业</label>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="email" placeholder="专业" value="">
+                                </div>
+                            </div>
+
+                            <!--上传论文-->
+                            <div class="form-group mt-2">
+                                <label for="avatar" class="col-sm-6 control-label">论文文件(需封面)</label>
+                                <div class="col-sm-12">
+                                    <input type="file" class="" id="avatar" placeholder="avatar">
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <button class="btn btn-success pull-right" type="submit">提交</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
